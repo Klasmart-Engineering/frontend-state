@@ -1,14 +1,14 @@
 export { default as GlobalStateProvider } from "./Provider";
 export * from "./state";
 export {
-    SetterOrUpdater,
     atom,
     atomFamily,
     constSelector,
     errorSelector,
     selector,
-    useRecoilCallback as useGlobalStateCallback,
+    SetterOrUpdater,
     useRecoilState as useGlobalState,
+    useRecoilCallback as useGlobalStateCallback,
     useRecoilSnapshot as useGlobalStateSnapshot,
     useRecoilValue as useGlobalStateValue,
     useSetRecoilState as useSetGlobalState,

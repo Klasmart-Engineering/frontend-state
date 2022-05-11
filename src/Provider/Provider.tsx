@@ -1,13 +1,12 @@
 
-import React, {
-    useEffect
-} from "react"
-import { RecoilRoot } from "recoil";
-import LocaleProvider from "../LocaleProvider";
 import {
     Config,
-    setConfig
+    setConfig,
 } from "../config";
+import LocaleProvider from "../LocaleProvider";
+import React,
+{ useEffect } from "react";
+import { RecoilRoot } from "recoil";
 
 interface StateProviderProps {
     cookieDomain: string;
@@ -16,7 +15,7 @@ interface StateProviderProps {
 const StateProvider: React.FC<StateProviderProps> = (props) => {
     useEffect(() => {
         const config = new Config({
-            cookieDomain: props.cookieDomain
+            cookieDomain: props.cookieDomain,
         });
         setConfig(config);
     }, [ props.cookieDomain ]);

@@ -1,10 +1,11 @@
 {
   "name": "@kl-engineering/frontend-state",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "license": "UNLICENSED",
   "scripts": {
     "build": "rollup -c --context window",
+    "lint": "eslint .",
     "release": "standard-version",
     "prepare": "husky install"
   },

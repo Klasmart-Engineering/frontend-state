@@ -3,15 +3,15 @@ export interface ConfigParameters {
 }
 
 export class Config {
-    constructor(params: ConfigParameters) {
-        this._cookieDomain = params.cookieDomain;
+    constructor (params: ConfigParameters) {
+        this.localCookieDomain = params.cookieDomain;
     }
 
-    private _cookieDomain: string;
+    private localCookieDomain: string;
 
     get cookieDomain () {
-        return this._cookieDomain
-    };
+        return this.localCookieDomain;
+    }
 }
 
 let config: Config;
