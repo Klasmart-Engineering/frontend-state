@@ -1,0 +1,17 @@
+# Config files
+.babel.config.js
+.eslintignore
+.eslintrc.js
+.gitignore
+.versionrc.js
+jest.config.ts
+setupTests.ts
+tsconfig.eslint.json
+tsconfig.json
+webpack.config.js
+
+# Storybook
+.storybook
+
+# Packages
+node_modules
