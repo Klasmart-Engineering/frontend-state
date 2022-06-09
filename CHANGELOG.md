@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/KL-Engineering/frontend-state/branches/compare/v1.1.1%0Dv1.1.0) (2022-06-09)
+
+
+### 🐛 Bug Fixes
+
+* use config cookie domain value ([dbd71a7](https://github.com/KL-Engineering/frontend-state/commits/dbd71a7b00173fc585f00978c1ecdfd720753c54))
+
 ## 1.1.0 (2022-05-31)
 
 
