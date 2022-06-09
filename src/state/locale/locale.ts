@@ -1,3 +1,4 @@
+import { getConfig } from "../../config";
 import { Cookies } from "react-cookie";
 import { atom } from "recoil";
 import { recoilPersist } from "recoil-persist";
@@ -13,7 +14,7 @@ const { persistAtom: cookiePersistAtom } = recoilPersist({
                 .forEach(([ key, value ]) => {
                     cookies.set(key, value, {
                         path: `/`,
-                        domain: `alpha.kidsloop.net`,
+                        domain: getConfig().cookieDomain,
                     });
                 });
         },
